@@ -1,5 +1,6 @@
 #include "../include/config.h"
 #include "../utils/logger.h"
+
 #include "engine.h"
 #include <stdio.h>
 
@@ -12,7 +13,7 @@ static void connect_to_market_data(const char* exchange) {
 }
 
 static void load_strategy(const char* strategy_name) {
-    printf("Carregando estratégia: %s\n", strategy_name);
+    printf("Carregando estratégia: %s\n", strategy_name);   
 }
 
 static void start_order_listener() {
@@ -39,9 +40,4 @@ void init_engine() {
 void poll_market_data() {
     // Simula recebimento de dados de mercado
     printf("Recebendo dados de mercado...\n");
-}
-
-void execute_trades() {
-    // Simula a execução de ordens
-    printf("Executando ordens baseadas na estratégia...\n");
 }
